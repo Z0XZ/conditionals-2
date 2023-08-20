@@ -1,4 +1,55 @@
-# conditionals-2
+# Komplekse Betingelser med 'and', 'or' og 'not' i Python
+
+## Forklaring
+
+Noen ganger trenger vi å sjekke flere betingelser samtidig for å bestemme hva som skal utføres. For dette bruker Python de logiske operatorene `and`, `or`, og `not`.
+
+- `and`: Begge betingelsene må være sanne for at den samlede betingelsen skal være sann.
+- `or`: Minst én av betingelsene må være sann for at den samlede betingelsen skal være sann.
+- `not`: Inverterer sannhetsverdien av betingelsen den er brukt med.
+
+Sammenlikningstegnene er de samme som tidligere:
+
+![Tabell med sammenlikningstegn](./assets/conditionals.png)
+
+## Eksempler
+
+1. **Bruke 'and'**:
+
+```Python
+alder = 20
+medlem = True
+
+if alder >= 18 and medlem:
+    print("Du har tilgang!")
+```
+
+2. **Bruke 'or'**:
+
+```Python
+alder = 16
+forelder_tilstede = True
+
+if alder >= 18 or forelder_tilstede:
+    print("Du kan se filmen!")
+```
+
+3. **Bruke 'not'**:
+
+```Python
+brukernavn_innlogget = False
+
+if not brukernavn_innlogget:
+    print("Vennligst logg inn for å fortsette.")
+```
+
+---
+
+### Oversikt over hvordan de ulike betingelsene fungerer
+
+| ![table showing evaluations with the and statement](./assets/conditionals-and.png) | ![table showing evaluations with the or statement](./assets/conditionals-or.png)                   |
+| ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| ![table showing evaluations with the and statement](./assets/conditionals-not.png) | ![table showing evaluations with the and statement](./assets/conditionals-order-of-precedence.png) |
 
 ## Oppgave
 
